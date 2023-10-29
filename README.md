@@ -12,6 +12,27 @@ In this context:
 
 - **Controller (C):** Handles user requests, interacts with the Model to retrieve or update data, and directs the View to render appropriate responses. It serves as the central hub for processing user actions.
 
+
+## Key Components
+
+### Dispatcher Servlet
+
+- **Description:** The Dispatcher Servlet acts as the front controller in a Spring MVC application. It receives all incoming HTTP requests and directs them to the appropriate controller for processing. It plays a central role in request handling and acts as an entry point to the Spring MVC application.
+
+### Handler Mapping
+
+- **Description:** Handler Mapping is responsible for mapping incoming HTTP requests to the appropriate controller methods. It defines the URL patterns and the corresponding controllers, ensuring that requests are routed to the correct controller for further processing.
+
+### Controller
+
+- **Description:** Controllers in Spring MVC are responsible for handling user requests and performing specific actions. They receive input from the Dispatcher Servlet, process the data, interact with the Model to perform CRUD operations, and determine which View should be rendered to the user. Controllers are a crucial part of the application's business logic.
+
+### View Resolver
+
+- **Description:** View Resolver is responsible for determining which View should be used to render the response to the user. It takes the logical view name returned by the controller and maps it to an actual view template, such as a JSP file or HTML page. This component helps in separating the presentation logic from the controller logic in the application.
+
+These components work together to implement the Model-View-Controller (MVC) pattern in a Spring MVC application, allowing for a structured and maintainable codebase.
+
 ## Features
 
 - **User Interface:** Provides a user-friendly web interface for performing CRUD operations.
